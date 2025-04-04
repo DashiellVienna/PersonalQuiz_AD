@@ -94,7 +94,13 @@
                         <viewLayoutGuide key="safeArea" id="Ahc-EL-hJ3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="Aef-ap-ilP"/>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="Aef-ap-ilP">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="hFS-9x-UZd">
+                            <connections>
+                                <segue destination="WmK-Ys-KKi" kind="show" id="HfD-r3-EyV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="WmK-Ys-KKi" kind="show" id="j8l-4l-UQC"/>
                     </connections>
@@ -110,10 +116,35 @@
                     <view key="view" contentMode="scaleToFill" id="2s3-Cc-KXN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jdc-en-6pZ">
+                                <rect key="frame" x="88.5" y="237" width="143" height="94.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39W-tX-TLA">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы осьминог" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9a-o5-DVw">
+                                        <rect key="frame" x="9" y="69" width="125" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gup-87-46K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jdc-en-6pZ" firstAttribute="centerX" secondItem="2s3-Cc-KXN" secondAttribute="centerX" id="RXw-ro-Uxw"/>
+                            <constraint firstItem="Jdc-en-6pZ" firstAttribute="centerY" secondItem="2s3-Cc-KXN" secondAttribute="centerY" id="qrh-6s-65M"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="AaB-Tv-5TW"/>
+                    <navigationItem key="navigationItem" title="Результат" id="AaB-Tv-5TW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="VPX-5t-q4d"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOb-Aj-gsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,6 +169,9 @@
             <point key="canvasLocation" x="865.67164179104475" y="-17.162471395881006"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="j8l-4l-UQC"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
