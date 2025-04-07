@@ -23,7 +23,6 @@ final class QuestionsViewController: UIViewController {
     @IBOutlet var rangedLabels: [UILabel]!
     @IBOutlet var rangedSlider: UISlider!
     
-    
     private let questions = Question.getQuestions()
     
     override func viewDidLoad() {
@@ -31,6 +30,15 @@ final class QuestionsViewController: UIViewController {
         
     }
 
-
+    @IBAction func singleQuestionButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func multipleQuestionButtonPressed() {
+    }
+    
+    @IBAction func rangedQuestionButtonPressed() {
+    }
+    
+    
 }
 
