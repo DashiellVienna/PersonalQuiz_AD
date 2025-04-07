@@ -87,7 +87,7 @@
         <!--Вопрос №-->
         <scene sceneID="YLX-EP-GKx">
             <objects>
-                <viewController id="RPy-EZ-NYt" sceneMemberID="viewController">
+                <viewController id="RPy-EZ-NYt" customClass="QuestionsViewController" customModule="PersonalQuiz_AD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uPy-K2-GL5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,6 +248,26 @@
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="Aef-ap-ilP"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="bQ1-8X-vJA" id="lNZ-8M-s4f"/>
+                        <outlet property="questionLabel" destination="1sU-E9-ZsC" id="jys-2M-TqZ"/>
+                        <outlet property="questionProgressView" destination="5lF-7l-JnP" id="zBd-Ov-wAp"/>
+                        <outlet property="rangedSlider" destination="oTg-e2-YLU" id="FEm-2B-Brp"/>
+                        <outlet property="rangedStackView" destination="xbB-Dn-NGY" id="EOe-4F-E4z"/>
+                        <outlet property="singleStackView" destination="C6k-Ox-5Cp" id="dH4-rj-d3R"/>
+                        <outletCollection property="singleButtons" destination="JLu-M5-8e0" collectionClass="NSMutableArray" id="fEe-Sb-9l5"/>
+                        <outletCollection property="singleButtons" destination="trt-ns-0Xy" collectionClass="NSMutableArray" id="JBu-KN-RKq"/>
+                        <outletCollection property="singleButtons" destination="R8S-rP-6lE" collectionClass="NSMutableArray" id="lfJ-Si-BW5"/>
+                        <outletCollection property="singleButtons" destination="yGI-2B-du7" collectionClass="NSMutableArray" id="lLW-gz-nyo"/>
+                        <outletCollection property="multipleLabels" destination="UbS-Qv-haj" collectionClass="NSMutableArray" id="1hT-4T-WLM"/>
+                        <outletCollection property="multipleLabels" destination="4Pm-P6-yeg" collectionClass="NSMutableArray" id="45q-2D-vm4"/>
+                        <outletCollection property="multipleLabels" destination="o1f-i7-ebf" collectionClass="NSMutableArray" id="lGE-3i-s7T"/>
+                        <outletCollection property="multipleLabels" destination="hHf-oI-kLd" collectionClass="NSMutableArray" id="JyC-lV-F0M"/>
+                        <outletCollection property="multipleSwitches" destination="fZ9-rw-IeX" collectionClass="NSMutableArray" id="VdW-xe-3aL"/>
+                        <outletCollection property="multipleSwitches" destination="4jC-y5-D0I" collectionClass="NSMutableArray" id="cbF-k6-JyX"/>
+                        <outletCollection property="multipleSwitches" destination="Qt7-NX-l5M" collectionClass="NSMutableArray" id="A4K-wq-tfu"/>
+                        <outletCollection property="multipleSwitches" destination="3ge-bA-QZF" collectionClass="NSMutableArray" id="hcE-CT-LvT"/>
+                        <outletCollection property="rangedLabels" destination="Lbo-VF-fvm" collectionClass="NSMutableArray" id="Z1P-yR-2er"/>
+                        <outletCollection property="rangedLabels" destination="KkA-qL-L4n" collectionClass="NSMutableArray" id="aQe-wZ-RGV"/>
                         <segue destination="WmK-Ys-KKi" kind="show" id="j8l-4l-UQC"/>
                     </connections>
                 </viewController>
@@ -258,7 +278,7 @@
         <!--Результат-->
         <scene sceneID="fTK-Qm-tXw">
             <objects>
-                <viewController id="WmK-Ys-KKi" sceneMemberID="viewController">
+                <viewController id="WmK-Ys-KKi" customClass="ResultViewController" customModule="PersonalQuiz_AD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2s3-Cc-KXN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
