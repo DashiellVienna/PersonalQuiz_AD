@@ -222,16 +222,25 @@
                                         <rect key="frame" x="0.0" y="50.5" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleQuestionButtonPressed:" destination="RPy-EZ-NYt" eventType="touchUpInside" id="dFs-fn-bHC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8S-rP-6lE">
                                         <rect key="frame" x="0.0" y="101" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleQuestionButtonPressed:" destination="RPy-EZ-NYt" eventType="touchUpInside" id="ghT-NQ-DHP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGI-2B-du7">
                                         <rect key="frame" x="0.0" y="151.5" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleQuestionButtonPressed:" destination="RPy-EZ-NYt" eventType="touchUpInside" id="txD-ce-4dL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
